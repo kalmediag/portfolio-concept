@@ -92,25 +92,3 @@ if (showcaseTiles.length) {
 
   window.addEventListener("resize", hidePopup);
 }
-
-function preventDeadLinks() {
-  showcaseTiles.forEach((tile) => {
-    tile.addEventListener("click", (event) => {
-      event.preventDefault();
-    });
-  });
-}
-
-setupCursor();
-preventDeadLinks();
-
-if (showcaseTiles.length) {
-  showcaseTiles.forEach((tile) => {
-    tile.addEventListener("pointerenter", () => showPopup(tile));
-    tile.addEventListener("pointerleave", hidePopup);
-    tile.addEventListener("focus", () => showPopup(tile));
-    tile.addEventListener("blur", hidePopup);
-  });
-
-  window.addEventListener("resize", hidePopup);
-}
