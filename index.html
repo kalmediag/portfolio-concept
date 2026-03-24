@@ -3,98 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects Showcase | KAL Media</title>
-  <meta name="description" content="A creative project showcase page for KAL Media using overlapping animated tiles to present work examples.">
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="stylesheet" href="showcase.css">
+  <title>KAL Media Showcase</title>
+  <meta name="description" content="Standalone animated projects showcase for KAL Media.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="grain"></div>
   <div class="cursor" aria-hidden="true"></div>
 
-  <header class="site-header showcase-header is-condensed">
-    <a class="brand" href="../home/" aria-label="Back to KAL Media home">
-      <img src="../assets/main%20logo.svg" alt="KAL Media">
+  <header class="showcase-header">
+    <a class="brand" href="#" aria-label="KAL Media showcase">
+      <img src="assets/logo/main%20logo.svg" alt="KAL Media">
     </a>
-
-    <nav class="site-nav" aria-label="Primary">
-      <a href="../home/">Home</a>
-      <a href="../football-designs/">Football Designs</a>
-      <a href="../formula-designs/">Formula Designs</a>
-      <a href="../spartans-client-work/">Spartans Client Work</a>
-    </nav>
-
-    <a class="header-cta" href="mailto:hello@kalmedia.com">Start a Project</a>
+    <p class="showcase-kicker">Projects Showcase</p>
   </header>
 
   <main class="showcase-page">
-    <section class="showcase-stage-shell">
-      <div class="showcase-stage" data-showcase-stage>
-        <a
-          class="showcase-tile showcase-brand"
-          href="../football-designs/"
-          data-title="Brand Concept"
-          data-category="Identity direction"
-          data-note="Square-format brand exploration and visual system thinking."
-        >
-          <img src="media/brand-concept.jpg" alt="Brand Concept project example">
-          <span class="showcase-tile-label">Brand Concept</span>
-        </a>
+    <section class="showcase-stage" data-showcase-stage>
+      <a
+        class="showcase-tile showcase-brand"
+        href="#"
+        data-title="Brand Concept"
+        data-category="Identity Direction"
+        data-note="Square-format brand exploration and visual system thinking."
+      >
+        <img src="assets/media/brand-concept.jpg" alt="Brand Concept project example">
+        <span class="showcase-tile-label">Brand Concept</span>
+      </a>
 
-        <a
-          class="showcase-tile showcase-lamine"
-          href="../football-designs/"
-          data-title="Football Designs"
-          data-category="Sport graphics"
-          data-note="High-impact player edits, posters and campaign-led football artwork."
-        >
-          <img src="media/football-designs.png" alt="Football design example featuring Lamine">
-          <span class="showcase-tile-label">Football Designs</span>
-        </a>
+      <a
+        class="showcase-tile showcase-lamine"
+        href="#"
+        data-title="Football Designs"
+        data-category="Sport Graphics"
+        data-note="High-impact player edits, posters and campaign-led football artwork."
+      >
+        <img src="assets/media/football-designs.png" alt="Football design example featuring Lamine">
+        <span class="showcase-tile-label">Football Designs</span>
+      </a>
 
-        <a
-          class="showcase-tile showcase-deagen"
-          href="../formula-designs/"
-          data-title="Formula Designs"
-          data-category="Motorsport visuals"
-          data-note="Fast, polished graphics built for reveals, races and launch moments."
-        >
-          <img src="media/formula-designs.jpg" alt="Formula design example">
-          <span class="showcase-tile-label">Formula Designs</span>
-        </a>
+      <a
+        class="showcase-tile showcase-deagen"
+        href="#"
+        data-title="Formula Designs"
+        data-category="Motorsport Visuals"
+        data-note="Fast, polished graphics built for reveals, races and launch moments."
+      >
+        <img src="assets/media/formula-designs.jpg" alt="Formula design example">
+        <span class="showcase-tile-label">Formula Designs</span>
+      </a>
 
-        <a
-          class="showcase-tile showcase-spartans"
-          href="../spartans-client-work/"
-          data-title="Spartans Client Work"
-          data-category="Client campaign work"
-          data-note="Large-format home graphics and campaign-ready club client visuals."
-        >
-          <img src="media/spartans-client-work.png" alt="Spartans client work example">
-          <span class="showcase-tile-label">Spartans Client Work</span>
-        </a>
+      <a
+        class="showcase-tile showcase-russell"
+        href="#"
+        data-title="Russell Concepts"
+        data-category="Driver Graphics"
+        data-note="Portrait-led motorsport compositions and sharp digital promo work."
+      >
+        <img src="assets/media/russell-concepts.png" alt="Russell concept example">
+        <span class="showcase-tile-label">Russell Concepts</span>
+      </a>
 
-        <a
-          class="showcase-tile showcase-russell"
-          href="../formula-designs/"
-          data-title="Russell Concepts"
-          data-category="Driver graphics"
-          data-note="Portrait-led motorsport compositions and sharp digital promo work."
-        >
-          <img src="media/russell-concepts.png" alt="Russell concept example">
-          <span class="showcase-tile-label">Russell Concepts</span>
-        </a>
+      <a
+        class="showcase-tile showcase-spartans"
+        href="#"
+        data-title="Spartans Client Work"
+        data-category="Client Campaign Work"
+        data-note="Large-format home graphics and campaign-ready club client visuals."
+      >
+        <img src="assets/media/spartans-client-work.png" alt="Spartans client work example">
+        <span class="showcase-tile-label">Spartans Client Work</span>
+      </a>
 
-        <div class="showcase-popup" data-showcase-popup aria-hidden="true">
-          <p class="showcase-popup-kicker" data-popup-category></p>
-          <h2 data-popup-title></h2>
-          <p class="showcase-popup-note" data-popup-note></p>
-        </div>
+      <div class="showcase-popup" data-showcase-popup aria-hidden="true">
+        <p class="showcase-popup-kicker" data-popup-category></p>
+        <h1 data-popup-title></h1>
+        <p class="showcase-popup-note" data-popup-note></p>
       </div>
     </section>
   </main>
 
-  <script src="../script.js"></script>
-  <script src="showcase.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
