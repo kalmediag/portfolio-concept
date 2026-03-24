@@ -11,6 +11,8 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 function setupCursor() {
   if (!cursor || prefersReducedMotion || window.innerWidth <= 760) return;
 
+  document.body.classList.add("has-custom-cursor");
+
   const moveCursor = (event) => {
     cursor.classList.add("is-active");
     cursor.style.transform = `translate(${event.clientX}px, ${event.clientY}px) translate(-50%, -50%)`;
@@ -67,6 +69,28 @@ function hidePopup() {
   if (!showcasePopup) return;
   showcasePopup.classList.remove("is-visible");
   showcasePopup.setAttribute("aria-hidden", "true");
+}
+
+function preventDeadLinks() {
+  showcaseTiles.forEach((tile) => {
+    tile.addEventListener("click", (event) => {
+      event.preventDefault();
+    });
+  });
+}
+
+setupCursor();
+preventDeadLinks();
+
+if (showcaseTiles.length) {
+  showcaseTiles.forEach((tile) => {
+    tile.addEventListener("pointerenter", () => showPopup(tile));
+    tile.addEventListener("pointerleave", hidePopup);
+    tile.addEventListener("focus", () => showPopup(tile));
+    tile.addEventListener("blur", hidePopup);
+  });
+
+  window.addEventListener("resize", hidePopup);
 }
 
 function preventDeadLinks() {
