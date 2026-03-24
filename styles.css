@@ -66,6 +66,11 @@ body::before {
   pointer-events: none;
 }
 
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none !important;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -93,12 +98,16 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  border: 1px solid rgba(23, 23, 23, 0.36);
-  background: rgba(255, 255, 255, 0.28);
-  backdrop-filter: blur(6px);
+  border: 1.5px solid rgba(18, 18, 18, 0.78);
+  background:
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.92) 0 22%, rgba(255, 255, 255, 0.24) 23% 100%);
+  backdrop-filter: blur(8px);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.38),
+    0 12px 24px rgba(18, 18, 18, 0.18);
   pointer-events: none;
   z-index: 50;
   opacity: 0;
@@ -116,10 +125,14 @@ img {
 }
 
 .cursor.is-hovering {
-  width: 48px;
-  height: 48px;
-  background: rgba(194, 79, 47, 0.1);
-  border-color: rgba(194, 79, 47, 0.34);
+  width: 58px;
+  height: 58px;
+  background:
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.95) 0 14%, rgba(194, 79, 47, 0.12) 15% 100%);
+  border-color: rgba(194, 79, 47, 0.78);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.54),
+    0 18px 34px rgba(194, 79, 47, 0.2);
 }
 
 .showcase-header,
